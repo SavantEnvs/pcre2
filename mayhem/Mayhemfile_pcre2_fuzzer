@@ -1,0 +1,7 @@
+project: savantenvs/pcre2
+target: pcre2_fuzzer
+cmds:
+  - cmd: /mayhem/pcre2_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/testdata/fuzzing/pcre2_fuzzer.dict
+    timeout: 5
